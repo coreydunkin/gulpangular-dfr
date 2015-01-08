@@ -1,0 +1,38 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+<div ng-include="'components/hero/hero.html'"></div>
+
+<div class="container">
+
+
+
+  <div class="jumbotron text-center">
+    <h1>'Allo, 'Allo!</h1>
+    <p class="lead">
+      <img src="assets/images/yeoman.png" alt="I'm Yeoman"><br>
+      Always a pleasure scaffolding your apps.
+    </p>
+    <p><a class="btn btn-lg btn-success" ng-href="#">Splendid!</a></p>
+  </div>
+
+  <div class="row ">
+    <div class="col-sm-6 col-md-4 loves" ng-repeat="objects in loves | orderBy:'rank'" data-love-select="{{objects.title}}">
+      <div class="thumbnail">
+        <img class="pull-right" ng-src="assets/images/{{objects.logo}}" alt="{{objects.title}}">
+        <div class="caption">
+          <h3>{{objects.title}}</h3>
+          <p>{{objects.description}}</p>
+          <p><a ng-href="{{objects.url}}">{{objects.url}}</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div contact-card></div>
+
+  <div class="footer">
+    <p>With ♥ from <a href="https://twitter.com/Swiip">@Swiip</a></p>
+  </div>
+
+</div>

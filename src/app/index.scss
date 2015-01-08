@@ -1,0 +1,39 @@
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.thumbnail {
+  height: 200px;
+
+  img.pull-right {
+    width: 50px;
+  }
+}
+// injector
+// endinjector
+
+
+// reset for dfr
+
+.loves {
+	padding: 0;
+}
+
+.thumbnail {
+	margin: 0;
+	border: none;
+}
+
+// hero
+
+.hero {
+	background: grey;
+	min-height: 400px;
+	h1 {
+		margin: 200px auto;
+		text-transform: uppercase;
+	}
+}
